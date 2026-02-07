@@ -10,13 +10,13 @@ import org.springframework.web.client.RestTemplate;
 @ComponentScan("se.magnus")
 public class ProductCompositeServiceApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ProductCompositeServiceApplication.class, args);
-    }
-
     @Bean
     RestTemplate restTemplate() {
         return new RestTemplate();
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(ProductCompositeServiceApplication.class, args);
     }
 
 }
